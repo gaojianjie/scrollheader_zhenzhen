@@ -1,0 +1,102 @@
+#header{
+    width:100%;
+    height: 100%;
+    overflow:hidden;
+    overflow-y:auto;
+    
+
+    .header-dev{
+        position: fixed;
+        top: 0;left: 0;
+        width: 100%;
+        height: .8rem;
+        background: skyblue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 .2rem;
+        line-height: .8rem;
+        color:white;
+        .header-dev-left{
+            background: rgba(0,0,0,0.6);
+            width: 4rem;
+            height: .5rem;
+            border-radius:4px;
+            display: flex;
+            align-items: center;
+            padding-left: .2rem;
+            input{
+                border:none;
+                background: none;
+                margin-left: .2rem;
+            }
+        }
+
+        .header-dev-right{
+            span{
+               font-size:.5rem; 
+            }
+        }
+    }
+
+    .mine-header-dev{
+        position: fixed;
+        top: 0;left: 0;
+        width: 100%;
+        height: .8rem;
+        background: skyblue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 .2rem;
+        color:white;
+        font-size:.6rem;
+        line-height: .8rem;
+        span{
+            margin-right: .2rem;
+            font-size: .5rem;
+        }
+    }
+
+
+    .container{
+        padding-top: .8rem;
+    }
+    .header-menu{
+        width: 100%;
+        height:1.5rem;
+        background: skyblue;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color:white;
+        padding: 0 .2rem;
+        dl{
+            width: 2rem;
+            height: auto;
+            color:white;
+            font-size:.34rem;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            dt{ 
+                flex-shrink: 0;
+                color:white;
+                text-align: center;
+                font-size: .5rem;
+            }
+            dd{
+                width: 1.5rem;
+                text-align:center;
+                height: .5rem;
+                color:white;
+                font-size: .28rem;
+            }
+        }
+
+        
+    }
+
+
+}
