@@ -2,15 +2,19 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
+  padding-top: .8rem;
+  background: #4285f4;
 }
-#header .header-dev {
+#header .header-dev,
+#header .mine-header-dev {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: .8rem;
-  background: skyblue;
+  z-index: 123;
+  background: #4285f4;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,7 +22,7 @@
   line-height: .8rem;
   color: white;
 }
-#header .header-dev .header-dev-left {
+#header .header-dev-left {
   background: rgba(0, 0, 0, 0.6);
   width: 4rem;
   height: .5rem;
@@ -27,40 +31,36 @@
   align-items: center;
   padding-left: .2rem;
 }
-#header .header-dev .header-dev-left input {
+#header .header-dev-left input {
   border: none;
   background: none;
   margin-left: .2rem;
 }
-#header .header-dev .header-dev-right span {
+#header .header-dev-right span {
   font-size: .5rem;
-}
-#header .mine-header-dev {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: .8rem;
-  background: skyblue;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 .2rem;
-  color: white;
-  font-size: .6rem;
-  line-height: .8rem;
 }
 #header .mine-header-dev span {
   margin-right: .2rem;
   font-size: .5rem;
 }
 #header .container {
-  padding-top: .8rem;
+  background: white;
 }
 #header .header-menu {
   width: 100%;
   height: 1.5rem;
-  background: skyblue;
+  position: relative;
+  background: #4285f4;
+  overflow: hidden;
+}
+#header .header-menu .menu-position-box {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+  height: 1.5rem;
+  background: #4285f4;
   display: flex;
   justify-content: space-around;
   align-items: center;
