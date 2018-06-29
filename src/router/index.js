@@ -1,10 +1,21 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import Header from '@/components/header/header.vue'
+
+
 
 Vue.use(Router)
 
+const HelloWorld = (resolve) => {
+  import('@/components/HelloWorld').then((module) => {
+    resolve(module);
+  })
+}
+
+const Header = (resolve) => {
+  import('@/components/header/header.vue').then((module) => {
+    resolve(module);
+  })
+}
 
  let routes =  [
     {
