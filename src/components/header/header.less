@@ -1,0 +1,102 @@
+#myHeader{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y:auto;
+
+    .header-devtd{
+        width: 100%;
+        height: auto;
+        background: #1d81cf;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        .header1{
+            width: 100%;
+            height: 1rem;
+            padding: 0 .27rem;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            color:white;
+
+            .header1-left{
+                width: 5.2rem;
+                height: .56rem;
+                display:flex;
+                align-items:center;
+                padding:0 10px;
+                background: #1873b9;
+                input{
+                    background: none;
+                    border:none;
+                    outline: none;
+                    padding-left: 10px; 
+                    &::-webkit-input-placeholder{
+                        color:white;
+                    }
+                }
+            }
+
+            .header1-right{
+                span{
+                    font-size: .5rem;
+                }
+            }
+        }
+    }
+    .header2{
+        width: 100%;
+        height: 1rem;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 .27rem;
+        background: none;
+        color:white;
+        div{
+            span{
+                font-size:.5rem;
+                margin-right:.7rem;
+            }
+        }
+        span{
+            font-size:.5rem;
+        }
+    }
+
+    .header-menu{
+        width: 100%;
+        height: 1.6rem;
+        overflow: hidden;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+        .menu-cont{
+            width: 100%;
+            padding: 0 .34rem;
+            height: auto;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            color:white;
+
+            dl{
+                text-align:center;
+                dt{
+                    font-size:.7rem;
+                }
+                dd{
+                    font-size:.32rem;
+                }
+            }
+        }
+    }
+
+    .containor{
+        padding-top: 2.6rem;
+    }
+
+}
