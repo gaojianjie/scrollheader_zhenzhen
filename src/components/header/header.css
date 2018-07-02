@@ -50,6 +50,7 @@
   padding: 0 .27rem;
   background: none;
   color: white;
+  opacity: 0;
 }
 #myHeader .header2 div span {
   font-size: .5rem;
